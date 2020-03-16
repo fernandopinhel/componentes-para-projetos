@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <div class="container">
+    	<div class="column">
+    		<h2>Checkboxes</h2>
+    		<div class="ex-checkbox">
+    			<input type="checkbox" id="checkbox_one" checked="checked" />
+    			<label for="checkbox_one">Default Checkbox</label>
+    		</div>
+    		<div class="ex-checkbox">
+    			<input type="checkbox" id="checkbox_two" />
+    			<label for="checkbox_two">Default Checkbox</label>
+    		</div>
+    		<div class="ex-checkbox" style="width: 300px">
+    			<input type="checkbox" id="checkbox_five" />
+    			<label for="checkbox_five">Default Checkbox with a very long label text which doesn't fit in one line</label>
+    		</div>
+    		<div class="ex-checkbox">
+    			<input type="checkbox" id="checkbox_three" disabled />
+    			<label for="checkbox_three">Disabled Checkbox</label>
+    		</div>
+    		<div class="ex-checkbox">
+    			<input type="checkbox" id="checkbox_four"  disabled checked="checked" />
+    			<label for="checkbox_four">Disabled Checkbox</label>
+    		</div>
+    	</div>
+    	<div class="column">
+    		<h2>Radio buttons</h2>
+    		<div class="ex-radio">
+    			<input type="radio" id="radio_one" name="radio_group" checked="checked" />
+    			<label for="radio_one">Default Radio Button</label>
+    		</div>
+    		<div class="ex-radio">
+    			<input type="radio" id="radio_two" name="radio_group" />
+    			<label for="radio_two">Default Radio Button</label>
+    		</div>
+    		<div class="ex-radio" style="width: 300px">
+    			<input type="radio" id="radio_five" name="radio_group" />
+    			<label for="radio_five">Default Checkbox with a very long label text which doesn't fit in one line</label>
+    		</div>
+    		<div class="ex-radio">
+    			<input type="radio" id="radio_three" disabled name="disabled" />
+    			<label for="radio_three">Disabled Radio Button</label>
+    		</div>
+    		<div class="ex-radio">
+    			<input type="radio" id="radio_four" checked="checked" disabled name="disabled" />
+    			<label for="radio_four">Disabled Radio Button</label>
+    		</div>
+    	</div>
+    	<div class="column">
+    		<h2>Input fields</h2>
+    		<div class="ex-inputfield">
+    			<input type="text" placeholder="Placeholder text"/>
+    		</div>
+    		<div class="ex-inputfield">
+    			<input type="text" placeholder="Placeholder text" disabled />
+    		</div>
+    		<h4>Large input fields</h4>
+    		<div class="ex-inputfield">
+    			<input type="text" class="ex-inputfield--large" placeholder="Placeholder text"/>
+    		</div>
+    		<div class="ex-inputfield">
+    			<input type="text" class="ex-inputfield--large" placeholder="Placeholder text" disabled />
+    		</div>
+    		<div class="ex-inputfield">
+    			<input type="text" class="ex-inputfield--large" value="Input field value"/>
+    		</div>
+    		<div class="ex-inputfield">
+    			<input type="text" class="ex-inputfield--large" value="Input field value" disabled />
+    		</div>
+    	</div>
+    	<div class="column">
+    		<h2>Dropdown menu</h2>
+    		<form class="ex-form">
+    			<select class="ex-select-menu">
+    				<option>Select menu option</option>
+    				<option>2nd option</option>
+    				<option>3rd option</option>
+    				<option>4th option</option>
+    				<option>5th option</option>
+    			</select>
+    		</form>
+    		<form class="ex-form">
+    			<select class="ex-select-menu" disabled>
+    				<option>Disabled select menu</option>
+    				<option>2nd option</option>
+    				<option>3rd option</option>
+    				<option>4th option</option>
+    				<option>5th option</option>
+    			</select>
+    		</form>
+    		<h4>Large</h4>
+    		<form class="ex-form">
+    			<select class="ex-select-menu ex-select-menu--large">
+    				<option>Select menu option</option>
+    				<option>2nd option</option>
+    				<option>3rd option</option>
+    				<option>4th option</option>
+    				<option>5th option</option>
+    			</select>
+    		</form>
+    		<form class="ex-form">
+    			<select class="ex-select-menu ex-select-menu--large" disabled>
+    				<option>Disabled select menu</option>
+    				<option>2nd option</option>
+    				<option>3rd option</option>
+    				<option>4th option</option>
+    				<option>5th option</option>
+    			</select>
+    		</form>
+    	</div>
+    </div>
+  </body>
+</html>

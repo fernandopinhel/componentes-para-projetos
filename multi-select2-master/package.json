@@ -1,0 +1,22 @@
+{
+  "name": "multi-select2",
+  "version": "1.0.1",
+  "main": "multi-select2.js",
+  "description": "Auticomplete and multiple select library written in pure javascript",
+  "author": {
+    "name": "Muhammad Abdullah",
+    "email": "mabdullah5514@yahoo.com",
+    "url": "https://github.com/abdullah5514/multi-select2"
+  },
+  "keywords": [
+    "javascript",
+    "select",
+    "js",
+    "multi-select",
+    "multiselect",
+    "autocomplete",
+    "auto-complete",
+    "elegent"
+  ],
+  "license": "MIT"
+}

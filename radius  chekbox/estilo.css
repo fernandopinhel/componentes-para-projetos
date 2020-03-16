@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+	color: #232323;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+	margin: 32px;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+.column {
+	float: left;
+	min-width: 50%;
+	margin-bottom: 16px;
+}
+
+/*
+	==========================
+	checkboxes & radio buttons
+	==========================
+*/
+.ex-checkbox,
+.ex-radio {
+	position: relative;
+	margin: 12px 0;
+	font-size: 14px;
+}
+
+.ex-checkbox label,
+.ex-radio label {
+	padding-left: 32px;
+	line-height: 140%;
+	font-weight: normal;
+	display: inline-block;
+	position: relative;
+}
+
+.ex-checkbox input[type=checkbox],
+.ex-radio input[type=radio] {
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	z-index: 10;
+	position: absolute;
+}
+
+/*
+	==========================
+	checkboxes
+	==========================
+*/
+.ex-checkbox input[type=checkbox] + label::before {
+	border: 1px solid #9f9f9f;
+	width: 20px;
+	height: 20px;
+	content: '';
+	position: absolute;
+	left: 0;
+	background-color: #fff;
+}
+
+.ex-checkbox input[type=checkbox]:hover + label::before {
+	border: 2px solid #0288d1;
+}
+
+.ex-checkbox input[type=checkbox]:focus + label::before {
+	box-shadow: 0 0 1px #0288d1;
+	outline: none;
+}
+
+.ex-checkbox input[type=checkbox]:checked + label::before {
+	border: 1px solid transparent;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBmaWxsPSIjMDI4OGQxIiBkPSJNMTguOSA4LjhsLTguNyA4LjdjLS4xLjEtLjIuMS0uMyAwbC00LjktNC45Yy0uMS0uMS0uMS0uMiAwLS4zbDEuMi0xLjJjLjEtLjEuMi0uMS4zIDBsMy42IDMuNiA3LjMtNy4zYy4xLS4xLjItLjEuMyAwbDEuMiAxLjJjLjEgMCAuMS4xIDAgLjJ6IiAvPjwvc3ZnPg==') no-repeat center center;
+	background-size: 24px 24px;
+}
+
+.ex-checkbox input[type=checkbox]:checked:hover + label::before {
+	background-size: 30px 30px;
+}
+
+.ex-checkbox input[type=checkbox]:disabled {
+	cursor: not-allowed;
+}
+
+.ex-checkbox input[type=checkbox]:disabled + label {
+	color: #bcbcbc;
+	cursor: not-allowed;
+}
+
+.ex-checkbox input[type=checkbox]:disabled:checked + label::before {
+	border: 1px solid transparent;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBmaWxsPSIjYmNiY2JjIiBkPSJNMTguOSA4LjhsLTguNyA4LjdjLS4xLjEtLjIuMS0uMyAwbC00LjktNC45Yy0uMS0uMS0uMS0uMiAwLS4zbDEuMi0xLjJjLjEtLjEuMi0uMS4zIDBsMy42IDMuNiA3LjMtNy4zYy4xLS4xLjItLjEuMyAwbDEuMiAxLjJjLjEgMCAuMS4xIDAgLjJ6IiAvPjwvc3ZnPg==') no-repeat center center;
+}
+
+.ex-checkbox input[type=checkbox]:disabled + label::before {
+	border: 1px solid #bcbcbc;
+}
+
+/*
+	==========================
+	radio buttons
+	==========================
+*/
+.ex-radio input[type=radio] + label::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	border: 1px solid #9f9f9f;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: border 0.3s ease-in-out;
+}
+
+.ex-radio input[type=radio]:hover + label::before {
+	border: 2px solid #0288d1;
+}
+
+.ex-radio input[type=radio]:focus + label::before {
+	box-shadow: 0 0 1px #0288d1;
+	outline: none;
+}
+
+.ex-radio input[type=radio]:checked + label::before,
+.ex-radio input[type=radio]:checked:hover + label::before {
+	border: 1px solid #0288d1;
+}
+
+.ex-radio input[type=radio] +  label::after {
+	position: absolute;
+	content: " ";
+	width: 12px;
+	height: 12px;
+	left: 4px;
+	top: 4px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	transform: scale(0, 0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.ex-radio input[type=radio]:checked +  label::after {
+	background-color: #0288d1;
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+
+.ex-radio input[type="radio"]:disabled {
+	cursor: not-allowed;
+}
+
+.ex-radio input[type="radio"]:disabled + label {
+	color: #bcbcbc;
+	cursor: not-allowed;
+}
+
+.ex-radio input[type=radio]:disabled +  label::before,
+.ex-radio input[type=radio]:checked:disabled +  label::before {
+	border: 1px solid #bcbcbc;
+}
+
+.ex-radio input[type=radio]:checked:disabled +  label::after {
+	background-color: #bcbcbc;
+}
+
+/*
+	==========================
+	input fields
+	==========================
+*/
+.ex-inputfield {
+	position: relative;
+	margin: 16px 0;
+}
+
+.ex-inputfield input::-ms-clear,
+.ex-inputfield input::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.ex-inputfield input[type="text"] {
+	-webkit-appearance: none;
+	height: 24px;
+	padding: 0 8px;
+	border: 1px solid #9f9f9f;
+	font-size: 14px;
+	border-radius: 0;
+}
+
+.ex-inputfield input[type="text"].ex-inputfield--large {
+	height: 40px;
+	padding: 0 16px;
+	font-size: 16px;
+}
+
+.ex-inputfield input[type="text"]:disabled {
+	background-color: #f0f0f0;
+	border: 1px solid #bcbcbc;
+	color: #757575;
+	cursor: not-allowed;
+	opacity: 1.0;/*used for safari as it changes it by default to 0.4*/
+}
+
+.ex-inputfield input[type="text"]:focus {
+	box-shadow: 0 0 1px #0288d1;
+	outline: none;
+}
+
+.ex-inputfield input::-webkit-input-placeholder {
+	color: #bcbcbc;
+}
+
+.ex-inputfield input[type="text"]:-ms-input-placeholder {
+	color: #bcbcbc;
+}
+
+.ex-inputfield input::-moz-placeholder {
+	color: #bcbcbc;
+	opacity: 1.0;
+}
+/*
+	==========================
+	select menu
+	==========================
+*/
+select::-ms-expand {
+    display: none;
+}
+
+.ex-form {
+	margin-bottom: 16px;
+}
+
+.ex-select-menu {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	height: 24px;
+	border: 1px solid #bcbcbc;
+	background-image: url('https://start.exactonline.nl/content/responsive/images/select-dropdown.png');
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	background-size: 8px auto;
+	font-size: 14px;
+	padding-left: 4px;
+	padding-right: 24px;
+}
+
+.ex-select-menu:focus {
+	box-shadow: 0 0 1px #0288d1;
+	outline: none;
+}
+
+.ex-select-menu:disabled {
+	background-color: #f0f0f0;
+	border: 1px solid #bcbcbc;
+	color: #bcbcbc;
+	cursor: not-allowed;
+}
+
+.ex-select-menu:disabled::-ms-value {
+	color: #bcbcbc;
+}
+
+.ex-select-menu--large {
+	height: 40px;
+	font-size: 16px;
+	padding-left: 12px;
+	padding-right: 46px;
+	background-position: right 16px center;
+	background-size: 14px 8px;
+}
+
+/*
+	==========================
+	buttons
+	==========================
+*/
+.ex-btn {
+	background-color: #898989;
+	background-image: none;
+	border: none;
+	border-radius: 2px;
+	color: #ffffff;
+	height: 25px;
+	line-height: 20px;
+	outline: none;
+	padding: 2px 10px 4px;
+}
+
+.ex-btn:hover {
+	background-color: #616161;
+}
+
+.ex-btn[disabled] {
+	background-color: #e5e5e5;
+	color: #757575;
+	cursor: not-allowed;
+}
+
+.ex-btn.ex-btn--primary {
+	background-color: #0288d1;
+}
+
+.ex-btn.ex-btn--primary:hover {
+	background-color: #01579b;
+}
+
+.ex-btn.ex-btn--primary[disabled] {
+	background-color: #46BDFD;
+	color: #f0f0f0;
+}

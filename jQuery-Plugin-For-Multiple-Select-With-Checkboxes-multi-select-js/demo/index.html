@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery multi-select.js Plugin Examples</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../src/example-styles.css">
+    <link rel="stylesheet" type="text/css" href="demo-styles.css">
+    <style>
+        body {
+    padding:0;
+}
+.container { margin: 150px auto; max-width: 960px;}
+    </style>
+
+</head>
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/form/jQuery-Plugin-For-Multiple-Select-With-Checkboxes-multi-select-js.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+<h1>jQuery multi-select.js Plugin Examples</h1>
+    <form class="demo-example">
+        <label for="people">Select people:</label>
+        <select id="people" name="people" multiple>
+            <option value="alice">Alice</option>
+            <option value="bob">Bob</option>
+            <option value="carol">Carol</option>
+        </select>
+    </form>
+
+    <form class="demo-example">
+        <label for="categories">Show:</label>
+        <select id="categories" name="categories" multiple>
+            <option value="a">Abandoned vehicles</option>
+            <option value="b">Bus stops</option>
+            <option value="c">Car parking</option>
+            <option value="d">Dog fouling</option>
+        </select>
+    </form>
+
+    <form class="demo-example">
+        <label for="ice-cream">Build an ice cream:</label>
+        <select id="ice-cream" name="ice-cream" multiple>
+            <option value="Cone">Just a cone</option>
+            <optgroup label="Flavours">
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Pistachio">Pistachio</option>
+            </optgroup>
+            <optgroup label="Toppings">
+                <option value="Sprinkles">Sprinkles</option>
+                <option value="Chocolate chips">Chocolate chips</option>
+            </optgroup>
+            <optgroup label="Sauces">
+                <option value="Strawberry sauce">Strawberry sauce</option>
+                <option value="Chocolate sauce">Chocolate sauce</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <div class="demo-example position-menu-within">
+        <label for="line-wrap-example">Line wrap example</label>
+        <select id="line-wrap-example" multiple>
+            <option>The final option…</option>
+            <option>Should wrap onto…</option>
+            <option>Multiple lines, to avoid expanding outside the grey wrapper</option>
+        </select>
+    </div>
+
+    <form class="demo-example modal-example">
+        <label for="modal-example">Modal example</label>
+        <select id="modal-example" name="inventors" multiple>
+            <option value="al">Ada Lovelace</option>
+            <option value="gh">Grace Hopper</option>
+            <option value="hl">Hedy Lamarr</option>
+            <option value="mk">Margaret E. Knight</option>
+            <option value="sj">Shirley Ann Jackson</option>
+        </select>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../src/jquery.multi-select.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#people').multiSelect();
+        $('#ice-cream').multiSelect();
+        $('#line-wrap-example').multiSelect({
+            positionMenuWithin: $('.position-menu-within')
+        });
+        $('#categories').multiSelect({
+            noneText: 'All categories',
+            presets: [
+                {
+                    name: 'All categories',
+                    options: []
+                },
+                {
+                    name: 'My categories',
+                    options: ['a', 'c']
+                }
+            ]
+        });
+        $('#modal-example').multiSelect({
+            'modalHTML': '<div class="multi-select-modal">'
+        });
+    });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>

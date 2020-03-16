@@ -1,0 +1,12 @@
+body{
+  padding:25px;
+}
+
+.SumoSelect > .optWrapper {
+  min-width:100%;
+  width:auto;
+}
+
+label{
+  margin-bottom: 0;
+}

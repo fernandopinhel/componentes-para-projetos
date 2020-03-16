@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-back-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-back-gray" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M6.34,13 C6.077,13 5.812,12.897 5.615,12.693 L0.287,7.206 C-0.0951855848,6.81252963 -0.0951855848,6.18647037 0.287,5.793 L5.615,0.308 C5.80171203,0.114970349 6.05761253,0.00424854653 6.32613869,0.00030791099 C6.59466485,-0.00363272455 6.85370415,0.0995323092 7.046,0.287 C7.446,0.677 7.456,1.317 7.066,1.719 L3.408,5.487 L10.988,5.487 C11.5474645,5.487 12.001,5.94053555 12.001,6.5 C12.001,7.05946445 11.5474645,7.513 10.988,7.513 L3.408,7.513 L7.066,11.28 C7.34836936,11.5724578 7.429001,12.0051828 7.27091452,12.3797128 C7.11282804,12.7542427 6.7465233,12.998319 6.34,13 L6.34,13 Z" id="ico-back-white"></path>
+        </g>
+    </g>
+</svg>
