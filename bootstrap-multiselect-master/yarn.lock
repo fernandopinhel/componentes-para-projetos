@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@types/jquery@^3.2.12":
-  version "3.2.12"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.2.12.tgz#f496823108c3874c97c9a822e675a3926ee64b46"
-
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -1498,8 +1494,8 @@ string_decoder@~1.0.3:
     safe-buffer "~5.1.0"
 
 stringstream@~0.0.4:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
 
 strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
