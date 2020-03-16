@@ -1,0 +1,870 @@
+//  variaveis
+
+$placeholder: #95a7b9;
+$primaria-bradesco:#0e81ed;
+$secundaria-bradesco:#e60935;
+$bg-favorito:#E9EFF4;
+$white:#fff;
+$transicao-hover: all 0.8s;
+
+// fim variaveis
+
+// geral
+
+body{
+  font-family: 'Lato', sans-serif;
+  background: $bg-favorito;
+  padding: 30px;
+}
+
+h1{
+  font-size: 30px;
+  color:$primaria-bradesco;
+}
+
+.box > h2{
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+h6{
+  color: blue;
+}
+
+
+.box > .row a{
+  color: #e83e8c;
+  padding: 10px;
+  display: block;
+  background: #FBFBFB;
+}
+
+.example{
+  background: $white;
+  text-align: center;
+  padding: 20px 20px 70px 20px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.17);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.17);
+}
+
+.box{
+  background: $white;
+  border:1px solid #dde2e6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+button:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+// fim geral
+
+
+.form {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form {
+  input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+    color: #ccc;
+    font-weight: 600;
+  }
+}
+
+
+.form-control {
+  color: $placeholder;
+  border: 1px solid #E6E6E6;
+}
+
+.form {
+  label {
+    position: absolute;
+    bottom: 13px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid #E6E6E6;
+    font-weight: 300;
+  }
+}
+
+.form {
+  label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #BABABA;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  }
+}
+
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-bottom: 0!important;
+  transition: all 0.3s ease;
+  color: $placeholder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.content-name {
+  span:last-child {
+    height: 22px;
+  }
+}
+
+.form {
+  input:focus {
+    outline: none;
+  }
+}
+
+.input::placeholder{
+  color: black !important;
+}
+
+.input-date::placeholder{
+  color: yellow !important;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+  left: 0px;
+  color: red;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.form input:focus+.label-name .content-name{
+  color: green;
+}
+
+// fim forms etapas
+
+// form para tela de login
+
+.frame {
+  height: 575px;
+  width: 430px;
+  background: linear-gradient(rgba(35,43,85,0.75),rgba(35,43,85,0.95));
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px rgba(255,255,255,.5);
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.frame-long {height: 615px;}
+
+.frame-short {
+  height: 400px;
+  margin-top: 50px;
+  box-shadow: 0px 2px 7px rgba(0,0,0,0.1);
+}
+
+.nav.nav-login{
+  width: 100%;
+  height: 100px;
+  padding-top: 40px;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.nav.nav-login ul{
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+li.li-form-login {
+  padding-left: 10px;
+  font-size: 18px;
+  display: inline;
+  text-align: left;
+  text-transform: uppercase;
+  padding-right: 10px;
+  color: #ffffff;
+}
+
+.signin-active a {
+  padding-bottom: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 2px #1059FF;
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.signin-inactive a {
+  padding-bottom: 0;
+  color: rgba(255,255,255,.3);
+  text-decoration: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.signup-active a {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 2px #1059FF;
+  padding-bottom: 10px;
+}
+
+.signup-inactive a {
+  cursor: pointer;
+  color: rgba(255,255,255,.3);
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.form-login {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.form-login {
+  label {
+    position: absolute;
+    bottom: 13px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #E6E6E6;
+    font-weight: 300;
+  }
+}
+
+.form-login {
+  label::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #BABABA;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+  }
+}
+
+.form-login label span.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  padding-bottom: 0!important;
+  transition: all 0.3s ease;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.form-login > .content-name {
+  span:last-child {
+    height: 22px;
+  }
+}
+
+.form-login {
+  input:focus {
+    outline: none;
+  }
+}
+
+.form-login input:focus + .label-name .content-name,
+.form-login input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+  left: 0px;
+  color: #fff;
+}
+
+.form-login input:focus + .label-name::after,
+.form-login input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.form-login input:focus+.label-name .content-name{
+  color: #fff;
+}
+
+.form-signin {
+  width: 430px;
+  height: 375px;
+	font-size: 16px;
+	font-weight: 300;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 35px;
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.form-signin-left {
+  transform: translateX(-400px);
+  opacity: .0;
+}
+
+.form-signup {
+  width: 430px;
+  height: 375px;
+	font-size: 16px;
+	font-weight: 300;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 35px;
+  position: relative;
+  top: -375px;
+  left: 400px;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.form-signup-left {
+  transform: translateX(-399px);
+  opacity: 1;
+}
+
+.form-signup-down {
+  top: 0px;
+  opacity: 0;
+}
+
+.form-login input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent !important;
+  padding-left: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+#check path {
+  stroke: #ffffff;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width: .85px;
+  stroke-dasharray: 60px 300px;
+  stroke-dashoffset: -166px;
+  fill: rgba(255,255,255,.0);
+  transition: stroke-dashoffset 2s ease .5s, fill 1.5s ease 1.0s;
+}
+
+#check.checked path {
+  stroke-dashoffset: 33px;
+  fill: rgba(255,255,255,.03);
+}
+
+.form-signin input, .form-signup input {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+label.label-form-login {
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: rgba(255,255,255,.7);
+  display: block;
+}
+
+:focus {outline: none;}
+
+.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus {
+  background: rgba(255,255,255,.3);
+  border: none;
+  padding-right: 40px;
+  transition: background .5s ease;
+ }
+
+#checkbox[type="checkbox"]:not(:checked),
+#checkbox[type="checkbox"]:checked {
+  position: absolute;
+  display: none;
+}
+
+#checkbox[type="checkbox"]:not(:checked) + label,
+#checkbox[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 85px;
+  padding-top: 1px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#checkbox[type="checkbox"]:not(:checked) + label:before,
+#checkbox[type="checkbox"]:checked + label:before,
+#checkbox[type="checkbox"]:not(:checked) + label:after,
+#checkbox[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+}
+
+#checkbox[type="checkbox"]:not(:checked) + label:before,
+#checkbox[type="checkbox"]:checked + label:before {
+  width: 65px;
+  height: 30px;
+  background: rgba(255,255,255,.2);
+  border-radius: 15px;
+  left: 0;
+  top: -3px;
+  transition: all .2s ease;
+}
+
+#checkbox[type="checkbox"]:not(:checked) + label:after,
+#checkbox[type="checkbox"]:checked + label:after {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,.7);
+  border-radius: 50%;
+  top: 7px;
+  left: 10px;
+  transition: all .2s ease;
+}
+
+// on checked
+#checkbox[type="checkbox"]:checked + label:before {
+  background: #0F4FE6;
+}
+
+#checkbox[type="checkbox"]:checked + label:after {
+  background: #ffffff;
+  top: 7px;
+  left: 45px;
+}
+
+#checkbox[type="checkbox"]:checked + label .ui,
+#checkbox[type="checkbox"]:not(:checked) + label .ui:before,
+#checkbox[type="checkbox"]:checked + label .ui:after {
+  position: absolute;
+  left: 6px;
+  width: 65px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all .2s ease;
+}
+
+#checkbox[type="checkbox"]:not(:checked) + label .ui:before {
+  content: "não";
+  left: 25px;
+  color: rgba(255,255,255,.7);
+}
+
+#checkbox[type="checkbox"]:checked + label .ui:after {
+  content: "sim";
+  color: #ffffff;
+}
+
+#checkbox[type="checkbox"]:focus + label:before {
+  box-sizing: border-box;
+  margin-top: -1px;
+}
+
+.btn-signup {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 8px;
+  width: 100%;
+  height: 35px;
+	border: none;
+	border-radius: 20px;
+  margin-top: 23px;
+  background-color: #1059FF;
+}
+
+.btn-signin {
+  float: left;
+  padding-top: 8px;
+  width: 100%;
+  height: 35px;
+	border: none;
+	border-radius: 20px;
+  margin-top: -8px;
+}
+
+.btn-animate {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255,255,255, 1);
+  padding-top: 8px;
+  width: 100%;
+  height: 35px;
+	border: none;
+	border-radius: 20px;
+  margin-top: 23px;
+  background-color: rgba(16,89,255, 1);
+  left: 0px;
+  top: 0px;
+  transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
+}
+
+.btn-animate-grow {
+  width: 130%;
+  height: 625px;
+  position: relative;
+  left: -55px;
+  top: -444px;
+  color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,1);
+}
+
+a.btn-signup:hover, a.btn-signin:hover {
+  cursor: pointer;
+  background-color: #0F4FE6;
+  transition: background-color .5s;
+}
+
+.forgot {
+  height: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 24px;
+  margin-top: -375px;
+  border-top: solid 1px rgba(255,255,255,.3);
+  transition: all 0.5s ease;
+}
+
+.forgot-left {
+  transform: translateX(-400px);
+  opacity: 0;
+}
+
+.forgot-fade {
+  opacity: 0;
+}
+
+.forgot a {
+  color: rgba(255,255,255,.3);
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.color-white{
+  color: #fff;
+}
+
+// fim form para tela de login
+
+// slider / carousel nao funciona no IE
+
+.swiper-container {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+
+swiper-button-next:focus, swiper-button-prev:focus{background: transparent;}
+
+// fim slider / carousel funciona nao funciona no IE
+
+// slider / carousel funciona no IE
+
+.carousel-item{
+  padding: 15px 40px 0 40px;
+  text-align: center;
+}
+
+.carousel-control-next, .carousel-control-prev {width: 0;}
+
+.carousel-control-prev-icon{
+  position: absolute;
+  left: 0;
+  background:url(../img/prev-carousel.svg);
+  width: 30px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.6s all;
+}
+
+.carousel-control-next-icon{
+  position: absolute;
+  right: 0;
+  background:url(../img/next-carousel.svg);
+  width: 30px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.6s all;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 576px) {
+  .carousel-item {margin-right: 0;}
+
+  .carousel-inner .active + .carousel-item {display: block;}
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .active + .carousel-item + .carousel-item {display: block;}
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 991px) {
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+// fim slider / carousel funciona no IE
+
+// OWL slider por blocos
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.owl-stage{
+  padding-top: 13px;
+}
+
+.owl-carousel .item h4{
+  text-align: center;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+  font-size: 50px !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: transparent !important;
+  color: #212529 !important;
+}
+
+// fim OWL slider por blocos
+
+// accordion icones
+
+#accordion .card .card-header h5 button{
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.card-header{padding: 0;}
+
+.b-icon > button {
+  display: block;
+  position: relative;
+}
+
+.seta-accordion{
+  position: absolute;
+  right: 15px;
+  background:url(../img/seta-accordion.svg);
+  transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+  width: 30px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.6s all;
+}
+
+.b-icon > button[aria-expanded="true"] .seta-accordion{
+  position: absolute;
+  right: 15px;
+  background:url(../img/seta-accordion.svg);
+  width: 30px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+  transition: 0.6s all;
+}
+
+// fim accordion icones
